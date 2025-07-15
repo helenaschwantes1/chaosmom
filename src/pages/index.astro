@@ -1,11 +1,18 @@
 ---
 import BlogLayout from '../layouts/BlogLayout.astro';
 
-const title = "Welcome to Pixie Drip";
-const description = "Curated chaos, pop culture, and emotional tangents.";
+const title = "Pixie Drip";
+const description = "Curated chaos & pop culture with a personal twist.";
 ---
 
 <BlogLayout {title} {description}>
-  <h1>Pixie Drip</h1>
-  <p>This is your main page. Choose a section: <a href="/culture">Culture</a>, <a href="/music">Music</a>, <a href="/style">Style</a>.</p>
+  <h1 style="font-size: 2rem;">Welcome to Pixie Drip</h1>
+  <p style="margin-bottom: 1.5rem;">
+    A cozy mess of movies, music, style, and thoughts I should’ve kept to myself.
+  </p>
+  <ul style="list-style: none; padding: 0;">
+    <li><a href="/culture">→ Culture</a></li>
+    <li><a href="/music">→ Music</a></li>
+    <li><a href="/style">→ Style</a></li>
+  </ul>
 </BlogLayout>
