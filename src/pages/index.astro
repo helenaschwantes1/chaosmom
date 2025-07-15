@@ -1,18 +1,22 @@
 ---
-import BlogLayout from '../layouts/BlogLayout.astro';
-
-const title = "Pixie Drip";
-const description = "Curated chaos & pop culture with a personal twist.";
+const title = "Pixie Drip — Cultura Pop com Estilo";
+const description = "Reflexões estéticas e nostálgicas direto da mente de uma millennial cansada.";
 ---
 
-<BlogLayout {title} {description}>
-  <h1 style="font-size: 2rem;">Welcome to Pixie Drip</h1>
-  <p style="margin-bottom: 1.5rem;">
-    A cozy mess of movies, music, style, and thoughts I should’ve kept to myself.
-  </p>
-  <ul style="list-style: none; padding: 0;">
-    <li><a href="/culture">→ Culture</a></li>
-    <li><a href="/music">→ Music</a></li>
-    <li><a href="/style">→ Style</a></li>
-  </ul>
-</BlogLayout>
+<html lang="pt-BR">
+  <head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body style="font-family: Inter, sans-serif; background-color: #fffaf6; padding: 2rem;">
+    <h1>{title}</h1>
+    <p>{description}</p>
+    <nav>
+      <ul>
+        <li><a href="/culture">Culture</a></li>
+        <li><a href="/music">Music</a></li>
+        <li><a href="/style">Style</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
